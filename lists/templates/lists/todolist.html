@@ -28,7 +28,7 @@
               <li><input type="checkbox" id="checkbox" data-todo-id="{{ todo.id }}"> <h1>{{ todo.description }}</h1><p>{{ todo.summary }}</p></li>
                 <form action="{% url 'lists:delete_task' todo_id=todo.id %}" method=post >
                   {% csrf_token %}
-                  <button id="submit" type="button" value="Click" /></button>
+                  <button style="margin-top:5px;"><input id="submit" type="button" value="Delete" /></input></button>
                 </form>
                 
                 
@@ -45,7 +45,7 @@
             <li><input type="checkbox" id="checkbox" data-todo-id="{{ todo.id }}" checked="checked"> {{ todo.description }}<p>{{ todo.summary }}</p></li>
               <form action="{% url 'lists:delete_task' todo_id=todo.id %}" method=post>
                   {% csrf_token %}
-                <button id="submit" type="button" value="Click" /></button>
+                <button style="margin-top:5px;"><input id="submit" type="button" value="Delete" /></input></button>
               </form>
             {% endif %}
           {% endfor %}

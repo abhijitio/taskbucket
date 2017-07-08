@@ -26,7 +26,7 @@ $(document).ready(function() {
 
 {% block body %}
 <section class="header">
-  <h2 class="title">Todolist overview</h2>
+  <h2 class="title">Lists Overview</h2>
   <div class="row">
     <div class="three columns value-prop"></div>
     <div class="six columns">
@@ -41,11 +41,11 @@ $(document).ready(function() {
   </div>
   <div class="row">
     <div class="u-full-width">
-      <h6 class="docs-header todolist-overview">All your todolists</h6>
+      <h6 class="docs-header todolist-overview">All your Ctegories</h6>
       <table id="todolist-overview-table" class="tablesorter">
         <thead>
           <tr>
-            <th class='todolist-title'>Todolist title</th>
+            <th class='todolist-title'>Category Name</th>
             <th># Open</th>
             <th># Finished</th>
             <th class="datetime">Created at</th>
@@ -58,7 +58,7 @@ $(document).ready(function() {
             <td class='todolist-title'><a href="{% url 'lists:todolist' todolist_id=todolist.id %}">{{ todolist.title }}</a>
                 <form action="{% url 'lists:cat_del' cat_id=todolist.id %}" method=post>
                   {% csrf_token %}
-                  <button><input id="submit" type="button" value="Click"/></button>
+                  <button style="margin-top:5px;"><input id="submit" type="button" value="Delete"/></input></button>
                 </form>
             </td>
             <td>{{ todolist.count_open }}</td>
