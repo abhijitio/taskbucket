@@ -25,10 +25,10 @@
         <ul>
           {% for todo in todolist.todos.all %}
             {% if not todo.is_finished %}
-              <li><input type="checkbox" id="checkbox" data-todo-id="{{ todo.id }}"> {{ todo.description }}<p>{{ todo.summary }}</p></li>
+              <li><input type="checkbox" id="checkbox" data-todo-id="{{ todo.id }}"> <h1>{{ todo.description }}</h1><p>{{ todo.summary }}</p></li>
                 <form action="{% url 'lists:delete_task' todo_id=todo.id %}" method=post >
                   {% csrf_token %}
-                  <button><input id="submit" type="button" value="Click" /></button>
+                  <button id="submit" type="button" value="Click" /></button>
                 </form>
                 
                 
@@ -45,7 +45,7 @@
             <li><input type="checkbox" id="checkbox" data-todo-id="{{ todo.id }}" checked="checked"> {{ todo.description }}<p>{{ todo.summary }}</p></li>
               <form action="{% url 'lists:delete_task' todo_id=todo.id %}" method=post>
                   {% csrf_token %}
-                <button><input id="submit" type="button" value="Click" /></button>
+                <button id="submit" type="button" value="Click" /></button>
               </form>
             {% endif %}
           {% endfor %}
