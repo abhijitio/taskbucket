@@ -34,4 +34,15 @@ Open terminal and type the below commands (If you don't have django installed):-
 
 Make sure to do migrations. Migrations are Django’s way of propagating changes you make to your models (adding a field, deleting a model, etc.) into your database schema. Now, you can browse the landing page by visiting http://localhost:8000/
 
-
+<p>References :- </p>
+<p>http://flask.pocoo.org/snippets/33/</p>
+<p>https://docs.djangoproject.com/en/1.7/intro/tutorial01/</p>
+<p>https://stackoverflow.com/questions/31762878/sqlite-3-database-with-django</p>
+<p>http://www.tangowithdjango.com/book/chapters/models.html</p>
+<p>http://www.django-rest-framework.org/api-guide/serializers/</p>
+<p>http://www.django-rest-framework.org/tutorial/1-serialization/</p>
+<p>https://micropyramid.com/blog/custom-validations-for-serializer-fields-django-rest-framework/</p>
+<p>https://stackoverflow.com/questions/757022/how-do-you-serialize-a-model-instance-in-django</p>
+<p>https://medium.com/django-rest-framework/dealing-with-unique-constraints-in-nested-serializers-dade33b831d9</p>
+<p>https://medium.com/@djstein/modern-django-part-2-rest-apis-apps-and-django-rest-framework-ea0cac5ab104</p>
+<p>https://www.reddit.com/r/django/comments/4cbn3e/django_rest_framework_serializers_with_threedeep/</p>
