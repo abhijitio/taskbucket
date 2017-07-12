@@ -1,6 +1,6 @@
-# taskindee
+# taskbucket
 
-Indee Todo Task Management is a simple Todo List Program. It helps you to keep track of work. 
+Taskbucket is a simple Todo List Program. It helps you to keep track of work. 
 
 <p> UI Components :- </p>
 <p><li>Skeleton</li>
@@ -12,7 +12,7 @@ Indee Todo Task Management is a simple Todo List Program. It helps you to keep t
 
 
 <p>Test System :-</p>
-<p><li> Ubuntu 14.04 LTS </li></p>
+<p><li> Ubuntu 16.04 LTS </li></p>
 
 
 <p> Installation :- </p>
