@@ -29,6 +29,7 @@ Open terminal and type the below commands (If you don't have django installed):-
 <p>cd indieetask</p>
 <p>git clone https://github.com/abhijitio/taskindee.git </p>
 <p>python manage.py migrate</p>
+<p>python manage.py migrate --run-syncdb</p>
 <p>python manage.py runserver</p>
 </code>
 
